@@ -10,12 +10,7 @@ void setup()
   clear();
 }
 
-void showDick(unsigned int msdelay = 200)
-{
-  clear();
-  showStaticText("8====D~~~~~", msdelay);
-  clear();
-}
+
 
 void scrollWelcome()
 {
