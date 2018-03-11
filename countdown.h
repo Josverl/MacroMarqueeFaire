@@ -5,7 +5,7 @@ inline void showCountDown()
 {
   clear();
 
-  const char* text = "                 THE MAKING BEGINS IN ";
+  const char* text = "THE MAKING BEGINS IN ";
 
   unsigned int count = 600; 
   while (count-- > 0)

@@ -13,7 +13,7 @@ void setup()
 void showDick(unsigned int msdelay = 200)
 {
   clear();
-  showStaticText("                8====D~~~~~", msdelay);
+  showStaticText("8====D~~~~~", msdelay);
   clear();
 }
 
@@ -23,27 +23,6 @@ void scrollWelcome()
   scrollText(welcome);
 }
 
-void showSponsors()
-{
-  // 57 characters with space in front and end
-  //     " 123456789012345678901234567890123456789012345678901234567 "
-  //     "                                                           "
-
-  const char* sponsors = "Maker Faires are happening in 41 countries around the globe and all over the United States!  Thanks to our sponsors, supporters and volunteers, Maker Faire Milwaukee is one of the biggest Faires in the world.";
-  scrollText(sponsors);
-
-  const char* sponsor1 =  "         Silversmith Sponsor * Rockwell Automation         ";
-  showStaticText(sponsor1);
-
-  const char* sponsor2 =  "               Nerdy Derby Sponsor * Kohl's                ";
-  showStaticText(sponsor2);
-
-  const char* sponsor3 =  " Field Trip Friday Sponsor * Harley-Davidson Motor Company ";
-  showStaticText(sponsor3);
-
-  const char* sponsor4 =  " Thanks to Harvest Fair for sharing their grounds with us! ";
-  showStaticText(sponsor4);
-}
 
 void showAbout()
 {
@@ -59,17 +38,25 @@ void scrollDarkness()
 
 void loop()
 {
-  scrollWelcome();
+  const char* txtAbout = "In Together Forever zien wij hoe een onschuldig idee uitgroeide tot media imperium met alle gevolgen van dien ... ";
+  const char* text1 =  " Together Forever";
+  const char* text2 =  " 123456789012345678901234567890";
+  showStaticText(text1, 5*1000);
+  showStaticText(text2, 10*1000);
+  clear();
+  scrollText(txtAbout, true);
+
+  //scrollWelcome();
+/*  
   showStarField();
   showSponsors();
 
-  showDarkness();
   showDarkness();
 
   showCountDown();
   showAltText(" BUILD - LEARN - CRAFT - MEET - MAKE !!");
 
   showAbout();
-  showAbout();
+*/  
 }
 
