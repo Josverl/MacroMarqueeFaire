@@ -1,12 +1,16 @@
 #pragma once
 #include "driver.h"
 
+//todo ifndef 
+//#define SCROLL_DELAY 30
+//#define SCROLL_MAX_BRIGHTNESS 0xFF
+//#define SCROLL_MIN_BRIGHTNESS 0x00
+
+
 #define SCROLL_DEBUG 0
-#define SCROLL_DELAY 40
 #define SCROLL_DEBUG_VALUE altGradient
 
-#define SCROLL_MAX_BRIGHTNESS 0xFF
-#define SCROLL_MIN_BRIGHTNESS 0x00
+
 #define SCROLL_STEPS (SCROLL_MAX_BRIGHTNESS - SCROLL_MIN_BRIGHTNESS)
 
 
