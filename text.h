@@ -1,8 +1,15 @@
+#include <Boards.h>
+#include <Firmata.h>
+#include <FirmataConstants.h>
+#include <FirmataDefines.h>
+#include <FirmataMarshaller.h>
+#include <FirmataParser.h>
+
 #pragma once
 #include "driver.h"
 
 #define SCROLL_DEBUG 0
-#define SCROLL_DELAY 10
+#define SCROLL_DELAY 40
 #define SCROLL_DEBUG_VALUE altGradient
 
 #define SCROLL_MAX_BRIGHTNESS 0xFF
